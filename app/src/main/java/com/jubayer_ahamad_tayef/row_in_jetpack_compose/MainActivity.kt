@@ -32,57 +32,57 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
+}
 
-    @Composable
-    fun MyRow(modifier: Modifier) {
-        Row(modifier = modifier.fillMaxSize().padding(horizontal = 5.dp), horizontalArrangement = Arrangement.SpaceEvenly) {
-            Spacer(
-                modifier = Modifier
-                    .size(100.dp)
-                    .background(MaterialTheme.colorScheme.primary)
-                    .weight(1f)
-            )
-            Spacer(
-                modifier = Modifier
-                    .size(100.dp)
-                    .background(MaterialTheme.colorScheme.primary)
-                    .weight(1f)
-                    .align(Alignment.CenterVertically)
-            )
-            Spacer(
-                modifier = Modifier
-                    .size(100.dp)
-                    .background(MaterialTheme.colorScheme.primary)
-                    .weight(1f)
-                    .align(Alignment.Bottom)
-            )
-            Spacer(
-                modifier = Modifier
-                    .size(100.dp)
-                    .padding(start = 5.dp)
-                    .background(MaterialTheme.colorScheme.primary)
-                    .weight(1f)
-                    .align(Alignment.Bottom)
-            )
-            Spacer(
-                modifier = Modifier
-                    .size(100.dp)
-                    .background(MaterialTheme.colorScheme.primary)
-                    .weight(1f)
-                    .align(Alignment.CenterVertically)
-            )
-            Spacer(
-                modifier = Modifier
-                    .size(100.dp)
-                    .background(MaterialTheme.colorScheme.primary)
-                    .weight(1f)
-            )
-        }
+@Composable
+fun MyRow(modifier: Modifier) {
+    Row(modifier = modifier.fillMaxSize().padding(horizontal = 5.dp), horizontalArrangement = Arrangement.SpaceEvenly) {
+        Spacer(
+            modifier = Modifier
+                .size(100.dp)
+                .background(MaterialTheme.colorScheme.primary)
+                .weight(1f)
+        )
+        Spacer(
+            modifier = Modifier
+                .size(100.dp)
+                .background(MaterialTheme.colorScheme.primary)
+                .weight(1f)
+                .align(Alignment.CenterVertically)
+        )
+        Spacer(
+            modifier = Modifier
+                .size(100.dp)
+                .background(MaterialTheme.colorScheme.primary)
+                .weight(1f)
+                .align(Alignment.Bottom)
+        )
+        Spacer(
+            modifier = Modifier
+                .size(100.dp)
+                .padding(start = 5.dp)
+                .background(MaterialTheme.colorScheme.primary)
+                .weight(1f)
+                .align(Alignment.Bottom)
+        )
+        Spacer(
+            modifier = Modifier
+                .size(100.dp)
+                .background(MaterialTheme.colorScheme.primary)
+                .weight(1f)
+                .align(Alignment.CenterVertically)
+        )
+        Spacer(
+            modifier = Modifier
+                .size(100.dp)
+                .background(MaterialTheme.colorScheme.primary)
+                .weight(1f)
+        )
     }
+}
 
-    @Preview(showSystemUi = true)
-    @Composable
-    fun MyRowPreview() {
-        MyRow(modifier = Modifier.padding(5.dp))
-    }
+@Preview(showSystemUi = true)
+@Composable
+fun MyRowPreview() {
+    MyRow(modifier = Modifier.padding(5.dp))
 }
